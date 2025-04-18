@@ -1,2 +1,2 @@
-# brettloy.github.io
+# brettloy.github.io/
 My Personal Portfolio Site
