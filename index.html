@@ -677,8 +677,16 @@
               <span class="skill-text">SQL</span>
             </div>
             <div class="skill-item">
+              <i class="fa-chart-pie"></i>
+              <span class="skill-text">Tableau</span>
+            </div>
+            <div class="skill-item">
               <i class="fas fa-file-excel"></i>
-              <span class="skill-text">Excel</span>
+              <span class="skill-text">Microsoft Office(Excel)</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-file-excel"></i>
+              <span class="skill-text">Google Workspace(Sheets)</span>
             </div>
             <div class="skill-item">
               <i class="fas fa-chart-bar"></i>
@@ -686,7 +694,7 @@
             </div>
             <div class="skill-item">
               <i class="fas fa-brain"></i>
-              <span class="skill-text">Statistical Modeling</span>
+              <span class="skill-text">Statistical Modeling/Analysis</span>
             </div>
             <div class="skill-item">
               <i class="fas fa-project-diagram"></i>
@@ -704,38 +712,37 @@
         <span class="section-number">03.</span>
         <h2 class="section-title">Projects</h2>
       </div>
+      
       <div class="row g-4">
+        <div class="col-md-6">
+          <div class="project-card">
+            <h5>Airbnb SF Neighborhood Analysis</h5>
+            <p>This Tableau project visualizes Airbnb activity across San Francisco neighborhoods using spatial and listing data. The dashboard allows users to explore neighborhood-level metrics like average price per night, listing density, and value score (calculated as average rating per price). The interactive map helps identify which areas are most expensive, most popular, and best value for guests.</p>
+            <a href="https://github.com/brettloy/SF-Airbnb-Analysis" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div> 
+  
         <div class="col-md-6">
           <div class="project-card">
             <h5>Restaurant Revenue Prediction</h5>
-            <p>This project uses regression, classification, and resampling methods to analyze a simulated restaurant dataset and predict monthly revenue. The aim is to identify the most important business factors contributing to a restaurant’s financial success, using both exploratory data analysis and advanced modeling techniques.</p>
+            <p>This R project uses regression, classification, and resampling methods to analyze a simulated restaurant dataset and predict monthly revenue. The aim is to identify the most important business factors contributing to a restaurant’s financial success, using both exploratory data analysis and advanced modeling techniques.</p>
             <a href="https://github.com/brettloy/Restaurant-Revenue-Prediction" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
+  
         <div class="col-md-6">
           <div class="project-card">
             <h5>Heart Disease Risk Prediction</h5>
-            <p>This project explores complex relationships between various health indicators and the risk of heart disease using statistical modeling techniques. We focus on conditional entropy and odds ratios to evaluate both individual predictor strength and interaction effects between covariates.</p>
+            <p>This project in R explores complex relationships between various health indicators and the risk of heart disease using statistical modeling techniques. We focus on conditional entropy and odds ratios to evaluate both individual predictor strength and interaction effects between covariates.</p>
             <a href="https://github.com/brettloy/Heart-Disease-Risk-Factors-Project" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="project-card">
-            <h5>Clayton Kershaw Pitch Analysis</h5>
-            <p>This project analyzes the pitching performance of Clayton Kershaw, starting pitcher for the Los Angeles Dodgers, from 2015 to 2019 using MLB Statcast data. Through advanced statistical techniques such as K-means clustering, we identify pitch types, examine trends in release speed, movement, and evaluate pitch effectiveness.</p>
-            <a href="https://github.com/yourusername/project3-link" target="_blank" class="project-link">
-              View Project <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      
+  
         <div class="col-md-6">
           <div class="project-card">
             <h5>Analysis of Crimes in the US</h5>
             <p>This project investigates the relationship between demographic and infrastructural factors and serious crime rates across counties in the United States. Using both frequentist and Bayesian statistical modeling approaches, we identify key predictors of crime and assess the reliability of different statistical frameworks.</p>
-            <a href="https://github.com/brettloy/Bayesian-Analysis-Project" target="_blank" class="project-link">
+            <a href="https://github.com/brettloy/Analysis-of-Crimes-in-the-US" target="_blank" class="project-link">
               View Project <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -827,7 +834,6 @@
     // Intersection Observer for section fade-in
     document.addEventListener('DOMContentLoaded', function() {
       const sections = document.querySelectorAll('section');
-      
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
